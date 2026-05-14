@@ -3362,3 +3362,241 @@ body.menu-open {
     font-size: 34px;
   }
 }
+/* =========================
+   MÉTRICAS MÓVIL LIMPIAS
+========================= */
+
+@media (max-width: 768px) {
+  .metrics-section {
+    margin-top: -18px !important;
+    padding: 18px 0 46px !important;
+    background: #0f1216 !important;
+  }
+
+  .metrics-panel {
+    padding: 16px !important;
+    background: rgba(14, 18, 24, 0.96) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28) !important;
+  }
+
+  .metrics-panel::before {
+    display: none !important;
+  }
+
+  .metrics-panel::after {
+    left: 16px !important;
+    right: 16px !important;
+    height: 1px !important;
+  }
+
+  .metrics-intro {
+    display: none !important;
+  }
+
+  .metrics-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    border: 0 !important;
+  }
+
+  .metric-card,
+  .metric-card:first-child,
+  .metric-card:last-child {
+    min-height: 112px !important;
+    padding: 18px 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: rgba(255, 255, 255, 0.025) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  .metric-card::before,
+  .metric-value::after {
+    display: none !important;
+  }
+
+  .metric-label {
+    margin: 0 0 12px !important;
+    color: rgba(255, 255, 255, 0.48) !important;
+    font-size: 8px !important;
+    line-height: 1 !important;
+    letter-spacing: 1.8px !important;
+    text-align: left !important;
+  }
+
+  .metric-value {
+    display: block !important;
+    color: #ffffff !important;
+    font-size: 36px !important;
+    line-height: 0.9 !important;
+    font-weight: 900 !important;
+    letter-spacing: -1.8px !important;
+  }
+
+  .metric-card p {
+    display: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .metric-card,
+  .metric-card:first-child,
+  .metric-card:last-child {
+    min-height: 104px !important;
+    padding: 16px 12px !important;
+  }
+
+  .metric-value {
+    font-size: 32px !important;
+  }
+
+  .metric-label {
+    font-size: 7.5px !important;
+    letter-spacing: 1.5px !important;
+  }
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 14px !important;
+    bottom: 18px !important;
+    min-height: 42px !important;
+    padding: 0 15px !important;
+    font-size: 12px !important;
+    z-index: 60 !important;
+  }
+}
+/* =========================
+   PROCESO MÓVIL LIMPIO
+========================= */
+
+@media (max-width: 768px) {
+  .process-section {
+    padding: 70px 0 76px !important;
+    overflow: hidden !important;
+  }
+
+  .process-heading {
+    margin-bottom: 34px !important;
+  }
+
+  .process-heading h2 {
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1.2px !important;
+  }
+
+  .process-heading p {
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+  .process-board {
+    display: grid !important;
+    gap: 14px !important;
+    border-top: 0 !important;
+  }
+
+  .process-step {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 22px !important;
+    background: rgba(255, 255, 255, 0.45) !important;
+    border: 1px solid rgba(17, 20, 24, 0.12) !important;
+    border-bottom: 1px solid rgba(17, 20, 24, 0.12) !important;
+    box-shadow: 0 16px 42px rgba(17, 20, 24, 0.06) !important;
+    overflow: hidden !important;
+  }
+
+  .process-step:hover {
+    padding-left: 22px !important;
+  }
+
+  .process-step::before {
+    display: none !important;
+  }
+
+  .process-step-number {
+    position: absolute !important;
+    right: 16px !important;
+    top: 12px !important;
+    color: rgba(17, 20, 24, 0.08) !important;
+    font-size: 82px !important;
+    line-height: 0.8 !important;
+    font-weight: 900 !important;
+    letter-spacing: -4px !important;
+    pointer-events: none !important;
+  }
+
+  .process-step-content {
+    position: relative !important;
+    z-index: 2 !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .process-step-content span {
+    width: fit-content !important;
+    padding: 8px 11px !important;
+    background: #c73535 !important;
+    color: #ffffff !important;
+    border: 0 !important;
+    font-size: 10px !important;
+    letter-spacing: 1.8px !important;
+  }
+
+  .process-step-content span::after {
+    display: none !important;
+  }
+
+  .process-step-content h3 {
+    margin: 0 !important;
+    max-width: 92% !important;
+    font-size: 26px !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1px !important;
+  }
+
+  .process-step-content p {
+    grid-column: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    color: rgba(17, 20, 24, 0.66) !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+  }
+
+  .process-section::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .process-step {
+    padding: 20px !important;
+  }
+
+  .process-step:hover {
+    padding-left: 20px !important;
+  }
+
+  .process-step-number {
+    right: 12px !important;
+    top: 10px !important;
+    font-size: 70px !important;
+  }
+
+  .process-step-content h3 {
+    font-size: 24px !important;
+  }
+
+  .process-step-content p {
+    font-size: 13.5px !important;
+  }
+}
