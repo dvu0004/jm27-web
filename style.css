@@ -2939,3 +2939,165 @@ body.menu-open {
     transform: none !important;
   }
 }
+/* =========================
+   HEADER COLOR CORPORATIVO
+========================= */
+
+.header-absolute {
+  background: linear-gradient(
+    90deg,
+    rgba(13, 22, 32, 0.98) 0%,
+    rgba(20, 34, 45, 0.96) 48%,
+    rgba(13, 22, 32, 0.98) 100%
+  ) !important;
+  border-bottom: 1px solid rgba(199, 158, 54, 0.28) !important;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26) !important;
+}
+
+.header-absolute::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(199, 158, 54, 0.55),
+    transparent
+  ) !important;
+}
+
+/* Mejora visual del logo dentro de la barra */
+.logo {
+  padding-left: 0 !important;
+}
+
+.logo::before {
+  display: none !important;
+}
+
+.logo-img {
+  width: 150px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.28));
+}
+
+/* Menú más integrado con el logo */
+.nav-light a {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.nav-light a::after {
+  background: #c79e36 !important;
+}
+
+.nav-light a:hover {
+  color: #ffffff !important;
+}
+
+/* Header cuando haces scroll */
+.header-absolute.header-scrolled {
+  background: rgba(10, 18, 28, 0.96) !important;
+  border-bottom-color: rgba(199, 158, 54, 0.35) !important;
+}
+
+/* Responsive logo */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 138px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-img {
+    width: 128px;
+  }
+}
+/* =========================
+   HEADER BLANCO
+========================= */
+
+.header-absolute {
+  background: rgba(255, 255, 255, 0.96) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(17, 20, 24, 0.08) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.header-absolute::after {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(17, 20, 24, 0.08),
+    transparent
+  ) !important;
+}
+
+.header-inner {
+  min-height: 76px !important;
+}
+
+/* LOGO */
+.logo {
+  padding-left: 0 !important;
+  text-decoration: none;
+}
+
+.logo::before {
+  display: none !important;
+}
+
+.logo-img {
+  width: 160px;
+  height: auto;
+  display: block;
+  filter: none !important;
+}
+
+/* MENÚ */
+.nav-light a {
+  color: #111418 !important;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.nav-light a::after {
+  background: #c79e36 !important;
+}
+
+.nav-light a:hover {
+  color: #000000 !important;
+}
+
+/* BOTÓN MENÚ MÓVIL */
+.menu-toggle {
+  color: #111418 !important;
+  border-color: rgba(17, 20, 24, 0.12) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.menu-toggle span {
+  background: #111418 !important;
+}
+
+/* HEADER AL HACER SCROLL */
+.header-absolute.header-scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-inner {
+    min-height: 70px !important;
+  }
+
+  .logo-img {
+    width: 138px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-img {
+    width: 126px;
+  }
+}
